@@ -1,8 +1,13 @@
 
 // !this is our index route page ('/')
 
+// !Components
+import Header from "@/components/Header";
+
 export default function Home() {
   return (
-    <h1 className="text-3xl text-center text-sky-600">Hello World</h1>
+    <>
+      <Header label={"Home"}/>
+    </>
   )
 }
