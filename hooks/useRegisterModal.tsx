@@ -1,18 +1,17 @@
-
 // !Packages
 import { create } from 'zustand'
 
 // !Types
-interface LoginStore {
+interface RegisterStore {
     isOpen: boolean
     onOpen: () => void
     onClose: () => void
 }
 
-const useLoginModal = create<LoginStore>((set) => ({
+const useRegisterModal = create<RegisterStore>((set) => ({
     isOpen: false,
     onOpen: () => set({ isOpen: true }),
     onClose: () => set({ isOpen: false })
 }))
 
-export default useLoginModal
+export default useRegisterModal

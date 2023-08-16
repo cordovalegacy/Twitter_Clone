@@ -2,7 +2,9 @@
 // !Packages
 import { useCallback } from "react"
 import { AiOutlineClose as Close } from '@react-icons/all-files/ai/AiOutlineClose'
-import Button from "./Button"
+
+// !Components
+import Button from "../Global/Button"
 
 // !Types
 interface ModalProps {
@@ -41,10 +43,10 @@ const Modal: React.FC<ModalProps> = ({
 
     return (
         <>
-            <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none bg-neutral-800 bg-opacity-70">
-                <div className="relative w-full lg:w-1/2 my-6 mx-auto lg:max-w-3xl h-full lg:h-auto">
+            <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none bg-neutral-800 bg-opacity-70 max-h-screen">
+                <div className={`relative w-full lg:w-1/2 mx-auto lg:max-w-3xl h-full lg:h-auto my-6`}>
                     {/* Modal Content */}
-                    <div className="h-full lg:h-auto border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-black outline-none focus:outline-none">
+                    <div className="h-full lg:h-auto rounded-lg shadow-lg relative flex flex-col w-full bg-slate-900 border border-sky-600 focus:outline-none">
                         {/* Header */}
                         <div className="items-center justify-between flex p-10 rounded-t">
                             <h3 className="text-3xl font-semibold text-white">{title}</h3>

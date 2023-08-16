@@ -1,7 +1,7 @@
 
 // !Components
-import FollowBar from "./FollowBar"
-import SideBar from "./SideBar"
+import FollowBar from "../FollowBar/FollowBar"
+import SideBar from "../SideBar/SideBar"
 
 // !Types
 interface LayoutProps {
