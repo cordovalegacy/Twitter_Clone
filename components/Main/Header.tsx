@@ -2,7 +2,7 @@
 
 // !Packages
 import { useRouter } from "next/router"
-import { useCallback } from "react"
+import { useCallback } from "react" //works like useEffect
 import { BiArrowBack as Back } from '@react-icons/all-files/bi/BiArrowBack'
 
 // !Types
