@@ -12,6 +12,7 @@ import SideBarTweetButton from './SideBarTweetButton'
 
 const SideBar = () => {
 
+    //cool way to setup nav link props
     const items = [
         {
             label: 'Home',
